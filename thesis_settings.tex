@@ -19,7 +19,7 @@
 	}
 	\usetikzlibrary{babel}
 
-	\usepackage[deluxe]{otf}
+	%\usepackage[deluxe]{otf}
 	\usepackage[utf8]{inputenc}
 	\usepackage[numbers]{natbib}
 	\usepackage[T1]{fontenc}
@@ -46,15 +46,22 @@
 		footnote,
 		caption,
 		algorithm,
-		algorithmic
+		algorithmic,
+		pdfpages
 	}
 
-	\usepackage[dvipdfmx,hypertexnames=false, bookmarksnumbered]{
-		hyperref,
+	\usepackage[
+		dvipdfmx,
+		hypertexnames=false,
+		pdfusetitle,
+		bookmarksnumbered
+	]{
+		hyperref
 	}
 	\usepackage{
 		pxjahyper
 	}
+	\usepackage[dvipdfmx, ipa]{pxchfon}
 
 	\hypersetup{
 		colorlinks = true,
